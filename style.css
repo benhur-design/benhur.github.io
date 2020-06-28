@@ -9,9 +9,7 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     height: 100%;
-    width: 100%;
-    left: 0px;
-    top: 0px;
+    width: 100vw;
 }
 
 .child {
@@ -31,7 +29,7 @@ body {
     left: 0px;
     background: #0C0C0C;
     text-align: center;
-    padding-top: 65px;
+    padding-top: 45px;
 }
 
 footer {
@@ -99,6 +97,29 @@ footer {
     top: 826px;
 }
 
+.Resume {
+    /* Check my Resume */
+    position: absolute;
+    width: 244px;
+    height: 30px;
+    left: 206px;
+    top: 700px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.Arrow-Resume {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 475px;
+    top: 720px;
+}
+
 .Looking-for-me {
     position: relative;
     width: 263px;
@@ -123,15 +144,13 @@ footer {
 }
 
 a:hover {
-
-        color: rgb(0,0,0);
-        opacity: .6;
-        background: none;
-        border: none;
-        transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
-        cursor: pointer;
-        
-    }
+    color: rgb(0, 0, 0);
+    opacity: .6;
+    background: none;
+    border: none;
+    transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    cursor: pointer;
+}
 
 .small-email {
     display: none;
@@ -212,29 +231,6 @@ a:hover {
     color: #555555;
 }
 
-.Resume {
-    /* Check my Resume */
-    position: absolute;
-    width: 244px;
-    height: 30px;
-    left: 206px;
-    top: 580px;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-.Arrow-Resume {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 475px;
-    top: 600px;
-}
-
 .firstline {
     position: fixed;
     width: 0.5px;
@@ -270,10 +266,10 @@ a:hover {
 
 .footnote {
     position: absolute;
-    width: 400px;
+    width: 20vw;
     height: 19px;
     top: 65px;
-    left: 38%;
+    left: 40%;
     font-family: Cabin;
     font-style: normal;
     font-weight: normal;
@@ -413,7 +409,7 @@ a:hover {
     }
 }
 
-@media  (min-device-width : 768px) and (max-device-width : 1024px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
     .firstline {
         position: fixed;
         width: 0.5px;
@@ -602,12 +598,10 @@ a:hover {
 }
 
 @media (min-device-width: 320px) and (max-device-width: 480px) {
-
     html, body {
         overflow-x: hidden;
         overflow-y: scroll;
-      }
-
+    }
     body {
         position: relative;
         background-color: #000000;
