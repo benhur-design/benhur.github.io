@@ -123,15 +123,13 @@ footer {
 }
 
 a:hover {
-
-        color: rgb(0,0,0);
-        opacity: .6;
-        background: none;
-        border: none;
-        transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
-        cursor: pointer;
-        
-    }
+    color: rgb(0, 0, 0);
+    opacity: .6;
+    background: none;
+    border: none;
+    transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+    cursor: pointer;
+}
 
 .small-email {
     display: none;
@@ -328,7 +326,7 @@ a:hover {
 
 /* Responsive CSS */
 
-@media (max-width: 1440px) {
+@media (min-width: 1224px) and (max-width: 1920px) {
     .header {
         position: static;
         width: 100%;
@@ -413,7 +411,7 @@ a:hover {
     }
 }
 
-@media (max-width: 800px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
     .firstline {
         position: fixed;
         width: 0.5px;
@@ -601,7 +599,7 @@ a:hover {
     }
 }
 
-@media (max-width: 415px) and (max-height: 750px) {
+@media (min-device-width: 320px) and (max-device-width: 480px) {
     body {
         background-color: #000000;
         overflow: hidden;
