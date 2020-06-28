@@ -612,14 +612,17 @@ a:hover {
         position: relative;
         background-color: #000000;
         height: 100vh;
+        overflow-x: hidden;
     }
     .container {
+        overflow-x: hidden;
         height: 100vh;
         width: 100%;
         left: 0px;
         top: 0px;
     }
     .child {
+        overflow-x: hidden;
         scroll-snap-align: start;
         position: relative;
         width: 100%;
@@ -628,6 +631,7 @@ a:hover {
         top: 0px;
     }
     .logo {
+        overflow-x: hidden;
         position: absolute;
         width: 50px;
         height: 32px;
@@ -635,6 +639,7 @@ a:hover {
         top: 18px;
     }
     .header {
+        overflow-x: hidden;
         position: absolute;
         width: 100vw;
         height: 28px;
@@ -644,6 +649,7 @@ a:hover {
         text-align: center;
     }
     footer {
+        overflow-x: hidden;
         position: static;
         background-color: #0C0C0C;
         width: 100%;
@@ -653,6 +659,7 @@ a:hover {
         text-align: center;
     }
     .firstline {
+        overflow-x: hidden;
         position: fixed;
         width: 0.5px;
         height: 1943px;
@@ -663,6 +670,7 @@ a:hover {
         opacity: 0.2;
     }
     .secondline {
+        overflow-x: hidden;
         position: fixed;
         width: 0.5px;
         height: 1943px;
@@ -673,6 +681,7 @@ a:hover {
         opacity: 0.2;
     }
     .thirdline {
+        overflow-x: hidden;
         position: fixed;
         width: 0.5px;
         height: 1943px;
@@ -683,6 +692,7 @@ a:hover {
         opacity: 0.2;
     }
     .Introduction {
+        overflow-x: hidden;
         /* Hey, I’m Benhur. */
         position: absolute;
         width: 247px;
@@ -697,6 +707,7 @@ a:hover {
         color: #FFFFFF;
     }
     .Description {
+        overflow-x: hidden;
         /* I create thoughtful and usable digital experiences for people. */
         position: absolute;
         width: 300px;
@@ -711,6 +722,7 @@ a:hover {
         color: #8A8A8A;
     }
     .CTA {
+        overflow-x: hidden;
         /* Show me Case Studies */
         position: absolute;
         width: auto;
@@ -725,6 +737,7 @@ a:hover {
         color: #FFFFFF;
     }
     .Arrow-Case-Studies {
+        overflow-x: hidden;
         display: flex;
         position: absolute;
         width: 22px;
@@ -733,6 +746,7 @@ a:hover {
         top: 372px;
     }
     .Looking-for-me {
+        overflow-x: hidden;
         /* Looking for me? */
         position: relative;
         width: 250px;
@@ -748,12 +762,12 @@ a:hover {
         color: #8A8A8A;
     }
     .Resume {
+        overflow-x: hidden;
         /* Show me Case Studies */
-        position: absolute;
-        width: auto;
+        position: relative;
         height: 30px;
         left: 35px;
-        top: -280px;
+        top: 500px;
         font-family: Cabin;
         font-style: normal;
         font-weight: bold;
@@ -762,12 +776,13 @@ a:hover {
         color: #FFFFFF;
     }
     .Arrow-Resume {
+        overflow-x: hidden;
         display: flex;
         position: absolute;
         width: 22px;
         height: 22px;
         left: 176px;
-        top: -262px;
+        top: 598px;
     }
     .Email {
         display: none;
@@ -836,29 +851,8 @@ a:hover {
         top: 500px;
     }
     footer {
-        position: absolute;
-        background-color: #0C0C0C;
-        width: 100vw;
-        height: 100px;
-        bottom: 0px;
-        left: 0px;
-        text-align: center;
+        display: none;
     }
-    .footnote {
-        position: absolute;
-        width: 400px;
-        height: 19px;
-        top: 27.5px;
-        left: -15px;
-        text-align: center;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
-        line-height: 19px;
-        color: #555555;
-    }
-
     .Quote {
         display: none;
     }
