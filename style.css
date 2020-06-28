@@ -856,3 +856,261 @@ a:hover {
         color: #555555;
     }
 }
+
+/* For iPhone Pro Models */
+
+@media (device-width: 375px) and (device-height: 812px) {
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .container {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .child {
+        scroll-snap-align: start;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: #000000;
+        top: 0px;
+    }
+    .logo {
+        position: absolute;
+        width: 50px;
+        height: 32px;
+        left: 163px;
+        top: 18px;
+    }
+    .header {
+        position: absolute;
+        width: 100vw;
+        height: 28px;
+        left: 0px;
+        top: 0px;
+        background: #0C0C0C;
+        text-align: center;
+    }
+    footer {
+        position: static;
+        background-color: #0C0C0C;
+        width: 100%;
+        height: 163px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .firstline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 40px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .secondline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 188px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .thirdline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 335px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .Introduction {
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 247px;
+        height: 73px;
+        left: 35px;
+        top: 101px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        color: #FFFFFF;
+    }
+    .Description {
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 300px;
+        height: 91px;
+        left: 35px;
+        top: 166px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        color: #8A8A8A;
+    }
+    .CTA {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: 354px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: 372px;
+    }
+    .Looking-for-me {
+        /* Looking for me? */
+        position: relative;
+        width: 250px;
+        height: 23px;
+        left: 34px;
+        top: 50px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 23px;
+        /* identical to box height */
+        color: #8A8A8A;
+    }
+    .Resume {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: -420px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: -400px;
+    }
+    .Email {
+        display: none;
+    }
+    .github {
+        display: none;
+    }
+    .linkedin {
+        display: none;
+    }
+    .twitter {
+        display: none;
+    }
+    .booklist {
+        display: none;
+    }
+    .blog {
+        display: none;
+    }
+    .small-email {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 150px;
+    }
+    .small-github {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 220px;
+    }
+    .small-linkedin {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 290px;
+    }
+    .small-twitter {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 360px;
+    }
+    .small-booklist {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 430px;
+    }
+    .small-blog {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 500px;
+    }
+    footer {
+        position: absolute;
+        background-color: #0C0C0C;
+        width: 100vw;
+        height: 100px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .footnote {
+        position: absolute;
+        width: 400px;
+        height: 19px;
+        top: 27.5px;
+        left: -15px;
+        text-align: center;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 19px;
+        color: #555555;
+    }
+}
