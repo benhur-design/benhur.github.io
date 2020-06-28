@@ -1,0 +1,1114 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.child {
+    scroll-snap-align: start;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    top: 0px;
+}
+
+.header {
+    position: static;
+    width: 100%;
+    height: 163px;
+    top: 0px;
+    left: 0px;
+    background: #0C0C0C;
+    text-align: center;
+    padding-top: 65px;
+}
+
+footer {
+    position: absolute;
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 163px;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.Introduction {
+    /* Hey, I’m Benhur. */
+    position: absolute;
+    width: 461px;
+    height: 79px;
+    left: 201px;
+    top: 300px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 79px;
+    color: #FFFFFF;
+    /* identical to box height */
+}
+
+.Description {
+    /* I create thoughtful and usable digital experiences for people. */
+    position: absolute;
+    width: 597px;
+    height: 92px;
+    left: 201px;
+    top: 420px;
+    /* H2 */
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    color: #8A8A8A;
+}
+
+.CTA {
+    /* Show me Case Studies */
+    position: absolute;
+    width: 244px;
+    height: 30px;
+    left: 201px;
+    top: 805px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.Arrow-Case-Studies {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 470px;
+    top: 826px;
+}
+
+.Looking-for-me {
+    position: relative;
+    width: 263px;
+    height: 46px;
+    left: 201px;
+    top: 90px;
+    /* H4 */
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    color: #8A8A8A;
+}
+
+.Email {
+    position: absolute;
+    width: 117px;
+    height: 30px;
+    left: 201px;
+    top: 200px;
+}
+
+a:hover {
+
+        color: rgb(0,0,0);
+        opacity: .6;
+        background: none;
+        border: none;
+        transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        cursor: pointer;
+        
+    }
+
+.small-email {
+    display: none;
+}
+
+.small-github {
+    display: none;
+}
+
+.small-linkedin {
+    display: none;
+}
+
+.small-twitter {
+    display: none;
+}
+
+.small-booklist {
+    display: none;
+}
+
+.small-blog {
+    display: none;
+}
+
+.github {
+    position: absolute;
+    width: 114px;
+    height: 30px;
+    left: 201px;
+    top: 290px;
+}
+
+.linkedin {
+    position: absolute;
+    width: 114px;
+    height: 30px;
+    left: 201px;
+    top: 380px;
+}
+
+.twitter {
+    position: absolute;
+    width: 114px;
+    height: 30px;
+    left: 510px;
+    top: 200px;
+    display: flex;
+}
+
+.booklist {
+    position: absolute;
+    width: 171px;
+    height: 30px;
+    left: 510px;
+    top: 290px;
+}
+
+.blog {
+    position: absolute;
+    width: 165px;
+    height: 30px;
+    left: 510px;
+    top: 380px;
+}
+
+.Quote {
+    position: absolute;
+    width: 272px;
+    height: 90px;
+    left: 824px;
+    top: 290px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 30px;
+    color: #555555;
+}
+
+.Resume {
+    /* Check my Resume */
+    position: absolute;
+    width: 244px;
+    height: 30px;
+    left: 206px;
+    top: 580px;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.Arrow-Resume {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 475px;
+    top: 600px;
+}
+
+.firstline {
+    position: fixed;
+    width: 0.5px;
+    height: 1943px;
+    left: 206px;
+    top: 0px;
+    background-color: silver;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.secondline {
+    position: fixed;
+    width: 0.5px;
+    height: 1943px;
+    left: 515px;
+    top: 0px;
+    background-color: silver;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.thirdline {
+    position: fixed;
+    width: 0.5px;
+    height: 1943px;
+    left: 824px;
+    top: 0px;
+    background-color: silver;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.footnote {
+    position: absolute;
+    width: 400px;
+    height: 19px;
+    top: 65px;
+    left: 38%;
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+
+@keyframes animation01 {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.Arrow-Resume {
+    animation: animation01 0.75s infinite 0s ease-in;
+}
+
+@keyframes animation02 {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(15px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.Arrow-Case-Studies {
+    animation: animation02 0.75s infinite 0s ease-in;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1440px) {
+    .header {
+        position: static;
+        width: 100%;
+        height: 120px;
+        top: 0px;
+        left: 0px;
+        background: #0C0C0C;
+        text-align: center;
+        padding-top: 65px;
+    }
+    .Introduction {
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 461px;
+        height: 79px;
+        left: 201px;
+        top: 250px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 79px;
+        color: #FFFFFF;
+        /* identical to box height */
+    }
+    .Description {
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 597px;
+        height: 92px;
+        left: 201px;
+        top: 370px;
+        /* H2 */
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        color: #8A8A8A;
+    }
+    .CTA {
+        /* Show me Case Studies */
+        position: absolute;
+        width: 244px;
+        height: 30px;
+        left: 201px;
+        top: 620px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 470px;
+        top: 640px;
+    }
+    .Resume {
+        /* Check my Resume */
+        position: absolute;
+        width: 244px;
+        height: 30px;
+        left: 206px;
+        top: 500px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 475px;
+        top: 520px;
+    }
+}
+
+@media (max-width: 800px) {
+    .firstline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 100px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .secondline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 400px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .thirdline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 700px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .Introduction {
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 461px;
+        height: 79px;
+        left: 100px;
+        top: 200px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 79px;
+        color: #FFFFFF;
+        /* identical to box height */
+    }
+    .Description {
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 597px;
+        height: 92px;
+        left: 100px;
+        top: 320px;
+        /* H2 */
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        color: #8A8A8A;
+    }
+    .CTA {
+        /* Show me Case Studies */
+        position: absolute;
+        width: 244px;
+        height: 30px;
+        left: 100px;
+        top: 705px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 360px;
+        top: 725px;
+    }
+    .Looking-for-me {
+        position: relative;
+        width: 263px;
+        height: 46px;
+        left: 100px;
+        top: 90px;
+        /* H4 */
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        color: #8A8A8A;
+    }
+    .Email {
+        position: absolute;
+        width: 117px;
+        height: 30px;
+        left: 100px;
+        top: 200px;
+    }
+    .github {
+        position: absolute;
+        width: 114px;
+        height: 30px;
+        left: 100px;
+        top: 290px;
+    }
+    .linkedin {
+        position: absolute;
+        width: 114px;
+        height: 30px;
+        left: 100px;
+        top: 380px;
+    }
+    .twitter {
+        position: absolute;
+        width: 114px;
+        height: 30px;
+        left: 400px;
+        top: 200px;
+        display: flex;
+    }
+    .booklist {
+        position: absolute;
+        width: 171px;
+        height: 30px;
+        left: 400px;
+        top: 290px;
+    }
+    .blog {
+        position: absolute;
+        width: 165px;
+        height: 30px;
+        left: 400px;
+        top: 380px;
+    }
+    .Quote {
+        position: absolute;
+        width: 272px;
+        height: 90px;
+        left: 824px;
+        top: 290px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #555555;
+    }
+    .Resume {
+        /* Check my Resume */
+        position: absolute;
+        width: 244px;
+        height: 30px;
+        left: 100px;
+        top: 580px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 360px;
+        top: 600px;
+    }
+    .footnote {
+        position: absolute;
+        width: 400px;
+        height: 19px;
+        left: 200px;
+        text-align: center;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #555555;
+    }
+}
+
+@media (max-width: 415px) and (max-height: 750px) {
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .container {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .child {
+        scroll-snap-align: start;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: #000000;
+        top: 0px;
+    }
+    .logo {
+        position: absolute;
+        width: 50px;
+        height: 32px;
+        left: 163px;
+        top: 18px;
+    }
+    .header {
+        position: absolute;
+        width: 100vw;
+        height: 28px;
+        left: 0px;
+        top: 0px;
+        background: #0C0C0C;
+        text-align: center;
+    }
+    footer {
+        position: static;
+        background-color: #0C0C0C;
+        width: 100%;
+        height: 163px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .firstline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 40px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .secondline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 188px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .thirdline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 335px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .Introduction {
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 247px;
+        height: 73px;
+        left: 35px;
+        top: 101px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        color: #FFFFFF;
+    }
+    .Description {
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 300px;
+        height: 91px;
+        left: 35px;
+        top: 166px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        color: #8A8A8A;
+    }
+    .CTA {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: 354px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: 372px;
+    }
+    .Looking-for-me {
+        /* Looking for me? */
+        position: relative;
+        width: 250px;
+        height: 23px;
+        left: 34px;
+        top: 50px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 23px;
+        /* identical to box height */
+        color: #8A8A8A;
+    }
+    .Resume {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: -280px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: -262px;
+    }
+    .Email {
+        display: none;
+    }
+    .github {
+        display: none;
+    }
+    .linkedin {
+        display: none;
+    }
+    .twitter {
+        display: none;
+    }
+    .booklist {
+        display: none;
+    }
+    .blog {
+        display: none;
+    }
+    .small-email {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 150px;
+    }
+    .small-github {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 220px;
+    }
+    .small-linkedin {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 290px;
+    }
+    .small-twitter {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 360px;
+    }
+    .small-booklist {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 430px;
+    }
+    .small-blog {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 500px;
+    }
+    footer {
+        position: absolute;
+        background-color: #0C0C0C;
+        width: 100vw;
+        height: 100px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .footnote {
+        position: absolute;
+        width: 400px;
+        height: 19px;
+        top: 27.5px;
+        left: -15px;
+        text-align: center;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 19px;
+        color: #555555;
+    }
+}
+
+@media (max-width: 415px) and (min-height: 800px) {
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .container {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .child {
+        scroll-snap-align: start;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: #000000;
+        top: 0px;
+    }
+    .logo {
+        position: absolute;
+        width: 50px;
+        height: 32px;
+        left: 163px;
+        top: 18px;
+    }
+    .header {
+        position: absolute;
+        width: 100vw;
+        height: 28px;
+        left: 0px;
+        top: 0px;
+        background: #0C0C0C;
+        text-align: center;
+    }
+    footer {
+        position: static;
+        background-color: #0C0C0C;
+        width: 100%;
+        height: 163px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .firstline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 40px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .secondline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 188px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .thirdline {
+        position: fixed;
+        width: 0.5px;
+        height: 1943px;
+        left: 335px;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .Introduction {
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 247px;
+        height: 73px;
+        left: 35px;
+        top: 101px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 41px;
+        color: #FFFFFF;
+    }
+    .Description {
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 300px;
+        height: 91px;
+        left: 35px;
+        top: 166px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        color: #8A8A8A;
+    }
+    .CTA {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: 354px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: 372px;
+    }
+    .Looking-for-me {
+        /* Looking for me? */
+        position: relative;
+        width: 250px;
+        height: 23px;
+        left: 34px;
+        top: 50px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 23px;
+        /* identical to box height */
+        color: #8A8A8A;
+    }
+    .Resume {
+        /* Show me Case Studies */
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: 35px;
+        top: -400px;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        display: flex;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        left: 176px;
+        top: -382px;
+    }
+    .Email {
+        display: none;
+    }
+    .github {
+        display: none;
+    }
+    .linkedin {
+        display: none;
+    }
+    .twitter {
+        display: none;
+    }
+    .booklist {
+        display: none;
+    }
+    .blog {
+        display: none;
+    }
+    .small-email {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 150px;
+    }
+    .small-github {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 220px;
+    }
+    .small-linkedin {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 290px;
+    }
+    .small-twitter {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 360px;
+    }
+    .small-booklist {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 430px;
+    }
+    .small-blog {
+        display: block;
+        position: absolute;
+        width: 96px;
+        height: 25px;
+        left: 36px;
+        top: 500px;
+    }
+    footer {
+        position: absolute;
+        background-color: #0C0C0C;
+        width: 100vw;
+        height: 100px;
+        bottom: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    .footnote {
+        position: absolute;
+        width: 400px;
+        height: 19px;
+        top: 27.5px;
+        left: -15px;
+        text-align: center;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 19px;
+        color: #555555;
+    }
+}
