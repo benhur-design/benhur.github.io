@@ -615,14 +615,14 @@ a:hover {
     }
     .container {
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         left: 0px;
         top: 0px;
     }
     .child {
         scroll-snap-align: start;
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background: #000000;
         top: 0px;
