@@ -2,10 +2,12 @@
         background-color: #000000;
         overflow: hidden;
         height: 100vh;
+        overflow-x: hidden;
     }
 
     .container {
         overflow-y: scroll;
+        overflow-x: hidden;         
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         height: 100%;
