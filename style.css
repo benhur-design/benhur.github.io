@@ -1,609 +1,294 @@
-body {
-    background-color: #000000;
-    overflow: hidden;
-    height: 100vh;
-}
-
-.container {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    height: 100%;
-    width: 100vw;
-}
-
-.child {
-    scroll-snap-align: start;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #000000;
-    top: 0px;
-}
-
-.header {
-    position: static;
-    width: 100%;
-    height: 163px;
-    top: 0px;
-    left: 0px;
-    background: #0C0C0C;
-    text-align: center;
-    padding-top: 45px;
-}
-
-footer {
-    position: absolute;
-    background-color: #0C0C0C;
-    width: 100%;
-    height: 163px;
-    bottom: 0px;
-    left: 0px;
-    text-align: center;
-}
-
-.Introduction {
-    /* Hey, I’m Benhur. */
-    position: absolute;
-    width: 461px;
-    height: 79px;
-    left: 201px;
-    top: 300px;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 65px;
-    line-height: 79px;
-    color: #FFFFFF;
-    /* identical to box height */
-}
-
-.Description {
-    /* I create thoughtful and usable digital experiences for people. */
-    position: absolute;
-    width: 597px;
-    height: 92px;
-    left: 201px;
-    top: 420px;
-    /* H2 */
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    color: #8A8A8A;
-}
-
-.CTA {
-    /* Show me Case Studies */
-    position: absolute;
-    width: 244px;
-    height: 30px;
-    left: 201px;
-    top: 805px;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-.Arrow-Case-Studies {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 470px;
-    top: 826px;
-}
-
-.Resume {
-    /* Check my Resume */
-    position: absolute;
-    width: 244px;
-    height: 30px;
-    left: 206px;
-    top: 700px;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-.Arrow-Resume {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 475px;
-    top: 720px;
-}
-
-.Looking-for-me {
-    position: relative;
-    width: 263px;
-    height: 46px;
-    left: 201px;
-    top: 90px;
-    /* H4 */
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    color: #8A8A8A;
-}
-
-.Email {
-    position: absolute;
-    width: 117px;
-    height: 30px;
-    left: 201px;
-    top: 200px;
-}
-
-a:hover {
-    color: rgb(0, 0, 0);
-    opacity: .6;
-    background: none;
-    border: none;
-    transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
-    cursor: pointer;
-}
-
-.small-email {
-    display: none;
-}
-
-.small-github {
-    display: none;
-}
-
-.small-linkedin {
-    display: none;
-}
-
-.small-twitter {
-    display: none;
-}
-
-.small-booklist {
-    display: none;
-}
-
-.small-blog {
-    display: none;
-}
-
-.github {
-    position: absolute;
-    width: 114px;
-    height: 30px;
-    left: 201px;
-    top: 290px;
-}
-
-.linkedin {
-    position: absolute;
-    width: 114px;
-    height: 30px;
-    left: 201px;
-    top: 380px;
-}
-
-.twitter {
-    position: absolute;
-    width: 114px;
-    height: 30px;
-    left: 510px;
-    top: 200px;
-    display: flex;
-}
-
-.booklist {
-    position: absolute;
-    width: 171px;
-    height: 30px;
-    left: 510px;
-    top: 290px;
-}
-
-.blog {
-    position: absolute;
-    width: 165px;
-    height: 30px;
-    left: 510px;
-    top: 380px;
-}
-
-.Quote {
-    position: absolute;
-    width: 272px;
-    height: 90px;
-    left: 824px;
-    top: 290px;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 30px;
-    color: #555555;
-}
-
-.firstline {
-    position: fixed;
-    width: 0.5px;
-    height: 1943px;
-    left: 206px;
-    top: 0px;
-    background-color: silver;
-    z-index: 1;
-    opacity: 0.2;
-}
-
-.secondline {
-    position: fixed;
-    width: 0.5px;
-    height: 1943px;
-    left: 515px;
-    top: 0px;
-    background-color: silver;
-    z-index: 1;
-    opacity: 0.2;
-}
-
-.thirdline {
-    position: fixed;
-    width: 0.5px;
-    height: 1943px;
-    left: 824px;
-    top: 0px;
-    background-color: silver;
-    z-index: 1;
-    opacity: 0.2;
-}
-
-.footnote {
-    position: absolute;
-    width: 20vw;
-    height: 19px;
-    top: 65px;
-    left: 40%;
-    font-family: Cabin;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
-    color: #555555;
-}
-
-@keyframes animation01 {
-    0% {
-        transform: translateX(-5px);
+    body {
+        background-color: #000000;
+        overflow: hidden;
+        height: 100vh;
     }
-    25% {
-        transform: translateX(10px);
-    }
-    50% {
-        transform: translateX(15px);
-    }
-    75% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(-5px);
-    }
-}
 
-.Arrow-Resume {
-    animation: animation01 0.75s infinite 0s ease-in;
-}
+    .container {
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        height: 100%;
+        width: 100vw;
+    }
 
-@keyframes animation02 {
-    0% {
-        transform: translateX(-5px);
-    }
-    25% {
-        transform: translateX(10px);
-    }
-    50% {
-        transform: translateX(15px);
-    }
-    75% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(-5px);
-    }
-}
-
-.Arrow-Case-Studies {
-    animation: animation02 0.75s infinite 0s ease-in;
-}
-
-/* Responsive CSS */
-
-@media (max-width: 1440px) {
-    .header {
-        position: static;
+    .child {
+        scroll-snap-align: start;
+        position: relative;
         width: 100%;
-        height: 10vh;
+        height: 100vh;
+        background: #000000;
         top: 0px;
+    }
+
+    .header {
+        overflow-x: hidden;
+        position: absolute;
+        width: 100%;
+        height: 20vh;
         left: 0px;
+        top: 0px;
         background: #0C0C0C;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .Introduction {
-        /* Hey, I’m Benhur. */
-        position: absolute;
-        width: 461px;
-        height: 79px;
-        left: 201px;
-        top: 15vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 65px;
-        line-height: 79px;
-        color: #FFFFFF;
-        /* identical to box height */
-    }
-    .Description {
-        /* I create thoughtful and usable digital experiences for people. */
-        position: absolute;
-        width: 597px;
-        height: 92px;
-        left: 201px;
-        top: 30vh;
-        /* H2 */
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 38px;
-        line-height: 46px;
-        color: #8A8A8A;
-    }
-    .CTA {
-        /* Show me Case Studies */
-        position: absolute;
-        width: 244px;
-        height: 30px;
-        left: 201px;
-        top: 620px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
-    .Arrow-Case-Studies {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 470px;
-        top: 640px;
-    }
-    .Resume {
-        /* Check my Resume */
-        position: absolute;
-        width: 244px;
-        height: 30px;
-        left: 206px;
-        top: 550px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
-    .Arrow-Resume {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 475px;
-        top: 570px;
-    }
-}
-
-@media (min-device-width: 768px) and (max-device-width: 1024px) {
-    .firstline {
-        position: fixed;
-        width: 0.5px;
-        height: 1943px;
-        left: 100px;
-        top: 0px;
-        background-color: silver;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .secondline {
-        position: fixed;
-        width: 0.5px;
-        height: 1943px;
-        left: 400px;
-        top: 0px;
-        background-color: silver;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .thirdline {
-        position: fixed;
-        width: 0.5px;
-        height: 1943px;
-        left: 700px;
-        top: 0px;
-        background-color: silver;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .container {
-        overflow-x: hidden;
-    }
-    .child {
-        overflow-x: hidden;
-    }
-    .Introduction {
-        /* Hey, I’m Benhur. */
-        position: absolute;
-        width: 461px;
-        height: 79px;
-        left: 100px;
-        top: 200px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 65px;
-        line-height: 79px;
-        color: #FFFFFF;
-        /* identical to box height */
-    }
-    .Description {
-        /* I create thoughtful and usable digital experiences for people. */
-        position: absolute;
-        width: 597px;
-        height: 92px;
-        left: 100px;
-        top: 320px;
-        /* H2 */
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 38px;
-        line-height: 46px;
-        color: #8A8A8A;
-    }
-    .CTA {
-        /* Show me Case Studies */
-        position: absolute;
-        width: 244px;
-        height: 30px;
-        left: 100px;
-        top: 705px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
-    .Arrow-Case-Studies {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 360px;
-        top: 725px;
-    }
-    .Looking-for-me {
-        position: relative;
-        width: 263px;
-        height: 46px;
-        left: 100px;
-        top: 90px;
-        /* H4 */
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 38px;
-        line-height: 46px;
-        color: #8A8A8A;
-    }
-    .Email {
-        position: absolute;
-        width: 117px;
-        height: 30px;
-        left: 100px;
-        top: 200px;
-    }
-    .github {
-        position: absolute;
-        width: 114px;
-        height: 30px;
-        left: 100px;
-        top: 290px;
-    }
-    .linkedin {
-        position: absolute;
-        width: 114px;
-        height: 30px;
-        left: 100px;
-        top: 380px;
-    }
-    .twitter {
-        position: absolute;
-        width: 114px;
-        height: 30px;
-        left: 400px;
-        top: 200px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .booklist {
-        position: absolute;
-        width: 171px;
-        height: 30px;
-        left: 400px;
-        top: 290px;
-    }
-    .blog {
-        position: absolute;
-        width: 165px;
-        height: 30px;
-        left: 400px;
-        top: 380px;
-    }
-    .Quote {
-        position: absolute;
-        width: 272px;
-        height: 90px;
-        left: 824px;
-        top: 290px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        color: #555555;
-    }
-    .Resume {
-        /* Check my Resume */
-        position: absolute;
-        width: 244px;
-        height: 30px;
-        left: 100px;
-        top: 580px;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 30px;
-        color: #FFFFFF;
-    }
-    .Arrow-Resume {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        left: 360px;
-        top: 600px;
-    }
+
     footer {
         position: absolute;
         background-color: #0C0C0C;
-        width: 100%;
-        height: 163px;
+        width: 100vw;
+        height: 18vh;
         bottom: 0px;
         left: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
+
+    .Introduction {
+        overflow-x: hidden;
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 100vw;
+        height: 30vh;
+        left: 11%;
+        top: 20vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5vw;
+        line-height: 7vh;
+        color: #FFFFFF;
+    }
+
+    .Description {
+        overflow-x: hidden;
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 39vw;
+        height: 40vh;
+        left: 11%;
+        top: 34vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        line-height: 5vh;
+        color: #8A8A8A;
+    }
+
+    .CTA {
+        overflow-x: hidden;
+        /* Show me Case Studies */
+        position: absolute;
+        width: 40vw;
+        height: auto;
+        left: 11%;
+        top: 85vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vh;
+        line-height: 4vh;
+        color: #FFFFFF;
+    }
+
+    .Arrow-Case-Studies {
+        overflow-x: hidden;
+        display: flex;
+        position: absolute;
+        width: 10vw;
+        height: 4vh;
+        left: 41%;
+        top: 88vh;
+    }
+
+    .Resume {
+        /* Check my Resume */
+        position: absolute;
+        width: 40vw;
+        height: auto;
+        left: 11%;
+        top: 75vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vh;
+        line-height: 4vh;
+        color: #FFFFFF;
+    }
+
+    .Arrow-Resume {
+        overflow-x: hidden;
+        display: flex;
+        position: absolute;
+        width: 10vw;
+        height: 4vh;
+        left: 41%;
+        top: 78vh;
+    }
+
+    .Looking-for-me {
+        overflow-x: hidden;
+        /* Looking for me? */
+        position: relative;
+        width: 50vw;
+        height: 10vh;
+        left: 10%;
+        top: 9vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4vw;
+        line-height: 3vw;
+        /* identical to box height */
+        color: #8A8A8A;
+    }
+
+    .Email {
+        position: absolute;
+        width: 12vw;
+        height: 10vh;
+        left: 11%;
+        top: 28vh;
+    }
+
+    a:hover {
+        color: rgb(0, 0, 0);
+        opacity: .6;
+        background: none;
+        border: none;
+        transition: opacity .2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        cursor: pointer;
+    }
+
+    .small-email {
+        display: none;
+    }
+
+    .small-github {
+        display: none;
+    }
+
+    .small-linkedin {
+        display: none;
+    }
+
+    .small-twitter {
+        display: none;
+    }
+
+    .small-booklist {
+        display: none;
+    }
+
+    .small-blog {
+        display: none;
+    }
+
+    .github {
+        position: absolute;
+        width: 12vw;
+        height: 10vh;
+        left: 11%;
+        top: 38vh;
+    }
+
+    .linkedin {
+        position: absolute;
+        width: 12vw;
+        height: 10vh;
+        left: 11%;
+        top: 48vh;
+    }
+
+    .twitter {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 31%;
+        top: 28vh;
+        display: flex;
+    }
+
+    .booklist {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 31%;
+        top: 38vh;
+        display: flex;
+    }
+
+    .blog {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 31%;
+        top: 48vh;
+        display: flex;
+    }
+
+    .Quote {
+        position: absolute;
+        width: 30vw;
+        height: 40vh;
+        left: 50%;
+        top: 55vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        line-height: 5vh;
+        color: #555555;
+        opacity: 0.5;
+    }
+
+    .firstline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 11%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+
+    .secondline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 50%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+
+    .thirdline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 90%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+
     .footnote {
         position: absolute;
-        width: 400px;
+        width: 20vw;
         height: 19px;
-        left: 200px;
-        text-align: center;
+        top: 65px;
+        left: 40%;
         font-family: Cabin;
         font-style: normal;
         font-weight: normal;
@@ -611,245 +296,530 @@ a:hover {
         line-height: 19px;
         color: #555555;
     }
-}
 
-@media (max-device-width: 480px) {
-    .container {
-        overflow-x: hidden;
-        height: 100vh;
-        width: 100vw;
-        left: 0px;
-        top: 0px;
+    @keyframes animation01 {
+        0% {
+            transform: translateX(-5px);
+        }
+        25% {
+            transform: translateX(10px);
+        }
+        50% {
+            transform: translateX(15px);
+        }
+        75% {
+            transform: translateX(10px);
+        }
+        100% {
+            transform: translateX(-5px);
+        }
     }
-    .header {
-        overflow-x: hidden;
-        position: absolute;
-        width: 100%;
-        height: 40px;
-        left: 0px;
-        top: 0px;
-        background: #0C0C0C;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo {
-        position: relative;
-        width: 20vw;
-        height: 20vh;
-    }
-    footer {
-        overflow-x: hidden;
-        position: static;
-        background-color: #0C0C0C;
-        width: 100%;
-        height: 163px;
-        bottom: 0px;
-        left: 0px;
-        text-align: center;
-    }
-    .firstline {
-        overflow-x: hidden;
-        position: fixed;
-        width: 0.25vw;
-        height: 100vh;
-        left: 12vw;
-        top: 0px;
-        background-color: silver;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .secondline {
-        overflow-x: hidden;
-        position: fixed;
-        width: 0.25vw;
-        height: 100vh;
-        left: 60vw;
-        top: 0px;
-        background-color: silver;
-        z-index: 1;
-        opacity: 0.2;
-    }
-    .thirdline {
-        display: none;
-    }
-    .Introduction {
-        overflow-x: hidden;
-        /* Hey, I’m Benhur. */
-        position: absolute;
-        width: 50vw;
-        height: 30vh;
-        left: 10vw;
-        top: 15vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 10vw;
-        line-height: 7vh;
-        color: #FFFFFF;
-    }
-    .Description {
-        overflow-x: hidden;
-        /* I create thoughtful and usable digital experiences for people. */
-        position: absolute;
-        width: 50vw;
-        height: 40vh;
-        left: 10vw;
-        top: 32.5vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 6vw;
-        line-height: 4vh;
-        color: #8A8A8A;
-    }
-    .CTA {
-        overflow-x: hidden;
-        /* Show me Case Studies */
-        position: absolute;
-        width: 40vw;
-        height: 10vh;
-        left: 10vw;
-        top: 60vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 5vw;
-        line-height: 4vh;
-        color: #FFFFFF;
-    }
-    .Arrow-Case-Studies {
-        overflow-x: hidden;
-        display: flex;
-        position: absolute;
-        width: 10vw;
-        height: 4vh;
-        left: 55vw;
-        top: 63vh;
-    }
-    .Looking-for-me {
-        overflow-x: hidden;
-        /* Looking for me? */
-        position: relative;
-        width: 50vw;
-        height: 10vh;
-        left: 10vw;
-        top: 10vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 6vw;
-        line-height: 4vh;
-        /* identical to box height */
-        color: #8A8A8A;
-    }
-    .Resume {
-        overflow-x: hidden;
-        /* Show me Case Studies */
-        position: relative;
-        width: 40vw;
-        height: 10vh;
-        left: 10vw;
-        top: 72vh;
-        font-family: Cabin;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 5vw;
-        line-height: 4vh;
-        color: #FFFFFF;
-    }
+
     .Arrow-Resume {
-        overflow-x: hidden;
-        display: flex;
-        position: absolute;
-        width: 10vw;
-        height: 4vh;
-        left: 55vw;
-        top: 72.5vh;
+        animation: animation01 0.75s infinite 0s ease-in;
     }
-    .Email {
-        display: none;
-    }
-    .github {
-        display: none;
-    }
-    .linkedin {
-        display: none;
-    }
-    .twitter {
-        display: none;
-    }
-    .booklist {
-        display: none;
-    }
-    .blog {
-        display: none;
-    }
-    .small-email {
-        display: block;
-        position: absolute;
-        width: 10vw;
-        height: 10vh;
-        left: 10vw;
-        top: 25vh;
-    }
-    .small-github {
-        display: block;
-        position: absolute;
-        width: 10vw;
-        height: 10vh;
-        left: 10vw;
-        top: 35vh;
-    }
-    .small-linkedin {
-        display: block;
-        position: absolute;
-        width: 10vw;
-        height: 10vh;
-        left: 10vw;
-        top: 45vh;
-    }
-    .small-twitter {
-        display: block;
-        position: absolute;
-        width: 10vw;
-        height: 10vh;
-        left: 10vw;
-        top: 55vh;
-    }
-    .small-booklist {
-        display: block;
-        position: absolute;
-        width: 10vw;
-        height: 10vh;
-        left: 10vw;
-        top: 65vh;
-    }
-    .small-blog {
-        display: block;
-        position: absolute;
-        width: 10vh;
-        height: 10vh;
-        left: 10vw;
-        top: 75vh;
-    }
-    footer {
-        position: absolute;
-        width: 100vw;
-        height: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .footnote {
-        position: absolute;
-        width: 70vw;
-        left: auto;
-        top: auto;
-        font-size: 80%;
-        text-decoration-color: #FFFFFF;
-    }
-}
 
+    @keyframes animation02 {
+        0% {
+            transform: translateX(-5px);
+        }
+        25% {
+            transform: translateX(10px);
+        }
+        50% {
+            transform: translateX(15px);
+        }
+        75% {
+            transform: translateX(10px);
+        }
+        100% {
+            transform: translateX(-5px);
+        }
+    }
+
+    .Arrow-Case-Studies {
+        animation: animation02 0.75s infinite 0s ease-in;
+    }
+
+    /* Responsive CSS */
+
+    @media (max-device-width: 1024px) {
+        html, body {
+            position: relative;
+            overflow-x: hidden;
+        }
+        .container {
+            overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+        .firstline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.05vw;
+            height: 100vh;
+            left: 11%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .secondline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.05vw;
+            height: 100vh;
+            left: 55%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .thirdline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.05vw;
+            height: 100vh;
+            left: 90%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .child {
+            overflow-x: hidden;
+        }
+        .header {
+            overflow-x: hidden;
+            position: absolute;
+            width: 100%;
+            height: 20vh;
+            left: 0px;
+            top: 0px;
+            background: #0C0C0C;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer {
+            position: absolute;
+            width: 100vw;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .footnote {
+            position: absolute;
+            width: 70vw;
+            left: auto;
+            top: 3vh;
+            font-size: 100%;
+            text-decoration-color: #FFFFFF;
+        }
+        .Introduction {
+            overflow-x: hidden;
+            /* Hey, I’m Benhur. */
+            position: absolute;
+            width: 80vw;
+            height: 30vh;
+            left: 10%;
+            top: 22vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 8.6vw;
+            line-height: 7vh;
+            color: #FFFFFF;
+        }
+        .Description {
+            overflow-x: hidden;
+            /* I create thoughtful and usable digital experiences for people. */
+            position: absolute;
+            width: 57.5vw;
+            height: 32.8vh;
+            left: 10%;
+            top: 35vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.75vh;
+            line-height: 4vh;
+            color: #8A8A8A;
+        }
+        .CTA {
+            overflow-x: hidden;
+            /* Show me Case Studies */
+            position: absolute;
+            width: 40vw;
+            height: auto;
+            left: 10%;
+            top: 80vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3vh;
+            line-height: 4vh;
+            color: #FFFFFF;
+        }
+        .Arrow-Case-Studies {
+            overflow-x: hidden;
+            display: flex;
+            position: absolute;
+            width: 10vw;
+            height: 4vh;
+            left: 55vw;
+            top: 83vh;
+        }
+        .Resume {
+            overflow-x: hidden;
+            /* Show me Case Studies */
+            position: relative;
+            width: 40vw;
+            height: 10vh;
+            left: 10%;
+            top: 70vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 4vw;
+            line-height: 4vh;
+            color: #FFFFFF;
+        }
+        .Arrow-Resume {
+            overflow-x: hidden;
+            display: flex;
+            position: absolute;
+            width: 10vw;
+            height: 4vh;
+            left: 55vw;
+            top: 72.5vh;
+        }
+        .Looking-for-me {
+            overflow-x: hidden;
+            /* Looking for me? */
+            position: relative;
+            width: 50vw;
+            height: 10vh;
+            left: 10%;
+            top: 9vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5.8vw;
+            line-height: 4vh;
+            /* identical to box height */
+            color: #8A8A8A;
+        }
+        .Email {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 28vh;
+        }
+        .github {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 38vh;
+        }
+        .linkedin {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 48vh;
+        }
+        .twitter {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 55%;
+            top: 28vh;
+            display: flex;
+        }
+        .booklist {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 55%;
+            top: 38vh;
+        }
+        .blog {
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 55%;
+            top: 48vh;
+        }
+        .Quote {
+            position: absolute;
+            width: 50vw;
+            height: 20vh;
+            left: 10%;
+            top: 65vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2vh;
+            line-height: 3vh;
+            color: #555555;
+            opacity: 0.7;
+        }
+    }
+
+    @media (max-device-width: 480px) {
+        .container {
+            overflow-x: hidden;
+            height: 100%;
+            width: 100%;
+            left: 0px;
+            top: 0px;
+        }
+        .firstline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.25vw;
+            height: 100vh;
+            left: 10%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .secondline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.25vw;
+            height: 100vh;
+            left: 55%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .thirdline {
+            overflow-x: hidden;
+            position: fixed;
+            width: 0.25vw;
+            height: 100vh;
+            right: 10%;
+            top: 0px;
+            background-color: silver;
+            z-index: 1;
+            opacity: 0.2;
+        }
+        .child {
+            scroll-snap-align: start;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: #000000;
+            top: 0px;
+        }
+        .header {
+            overflow-x: hidden;
+            position: absolute;
+            width: 100%;
+            height: 20vh;
+            left: 0px;
+            top: 0px;
+            background: #0C0C0C;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            position: relative;
+            width: 20vw;
+            height: 20vh;
+        }
+        footer {
+            position: absolute;
+            width: 100vw;
+            height: 12vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .footnote {
+            position: absolute;
+            width: 70vw;
+            left: auto;
+            top: 3vh;
+            font-size: 4vw;
+            text-decoration-color: #FFFFFF;
+        }
+        .Introduction {
+            overflow-x: hidden;
+            /* Hey, I’m Benhur. */
+            position: absolute;
+            width: 80vw;
+            height: 100%;
+            left: 10%;
+            top: 20vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10.6vw;
+            line-height: 7vh;
+            color: #FFFFFF;
+        }
+        .Description {
+            overflow-x: hidden;
+            /* I create thoughtful and usable digital experiences for people. */
+            position: absolute;
+            width: 77.5vw;
+            height: 32.8vh;
+            left: 10%;
+            top: 32vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.75vh;
+            line-height: 4vh;
+            color: #8A8A8A;
+        }
+        .CTA {
+            overflow-x: hidden;
+            /* Show me Case Studies */
+            position: absolute;
+            width: 40vw;
+            height: auto;
+            left: 10%;
+            top: 65vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3vh;
+            line-height: 4vh;
+            /* identical to box height */
+            color: #FFFFFF;
+        }
+        .Arrow-Case-Studies {
+            overflow-x: hidden;
+            display: flex;
+            position: absolute;
+            width: 10vw;
+            height: 4vh;
+            left: 55vw;
+            top: 68vh;
+        }
+        .Resume {
+            overflow-x: hidden;
+            /* Show me Case Studies */
+            position: absolute;
+            width: 40vw;
+            height: 10vh;
+            left: 10%;
+            top: 77vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 3vh;
+            line-height: 4vh;
+            color: #FFFFFF;
+        }
+        .Arrow-Resume {
+            overflow-x: hidden;
+            display: flex;
+            position: absolute;
+            width: 10vw;
+            height: 4vh;
+            left: 55vw;
+            top: 80vh;
+        }
+        .Looking-for-me {
+            overflow-x: hidden;
+            /* Looking for me? */
+            position: relative;
+            width: 50vw;
+            height: 10vh;
+            left: 10%;
+            top: 9vh;
+            font-family: Cabin;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 5.8vw;
+            line-height: 4vh;
+            /* identical to box height */
+            color: #8A8A8A;
+        }
+        .Email {
+            display: none;
+        }
+        .github {
+            display: none;
+        }
+        .linkedin {
+            display: none;
+        }
+        .twitter {
+            display: none;
+        }
+        .booklist {
+            display: none;
+        }
+        .blog {
+            display: none;
+        }
+        .Quote {
+            display: none;
+        }
+        .small-email {
+            display: block;
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 25vh;
+        }
+        .small-github {
+            display: block;
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 35vh;
+        }
+        .small-linkedin {
+            display: block;
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 45vh;
+        }
+        .small-twitter {
+            display: block;
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 55vh;
+        }
+        .small-booklist {
+            display: block;
+            position: absolute;
+            width: 10vw;
+            height: 10vh;
+            left: 10%;
+            top: 65vh;
+        }
+        .small-blog {
+            display: block;
+            position: absolute;
+            width: 10vh;
+            height: 10vh;
+            left: 10%;
+            top: 75vh;
+        }
+    }
