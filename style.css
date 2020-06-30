@@ -7,7 +7,7 @@
 
     .container {
         overflow-y: scroll;
-        overflow-x: hidden;         
+        overflow-x: hidden;     
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         height: 100%;
@@ -73,11 +73,11 @@
         width: 39vw;
         height: 40vh;
         left: 11%;
-        top: 34vh;
+        top: 36vh;
         font-family: Cabin;
         font-style: normal;
         font-weight: normal;
-        font-size: 2vw;
+        font-size: 1.5vw;
         line-height: 5vh;
         color: #8A8A8A;
     }
@@ -345,7 +345,9 @@
 
     /* Responsive CSS */
 
-    @media (max-device-width: 1024px) {
+    @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) and (orientation : portrait) {
         html, body {
             position: relative;
             overflow-x: hidden;
@@ -575,6 +577,240 @@
             opacity: 0.7;
         }
     }
+
+    @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    html, body {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .container {
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+    }
+    .firstline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 10%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .secondline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 55%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .thirdline {
+        overflow-x: hidden;
+        position: fixed;
+        width: 0.05vw;
+        height: 100vh;
+        left: 89%;
+        top: 0px;
+        background-color: silver;
+        z-index: 1;
+        opacity: 0.2;
+    }
+    .child {
+        overflow-x: hidden;
+    }
+    .header {
+        overflow-x: hidden;
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+        left: 0px;
+        top: 0px;
+        background: #0C0C0C;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer {
+        position: absolute;
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footnote {
+        position: absolute;
+        width: 70vw;
+        left: auto;
+        top: 3vh;
+        font-size: 100%;
+        text-decoration-color: #FFFFFF;
+    }
+    .Introduction {
+        overflow-x: hidden;
+        /* Hey, I’m Benhur. */
+        position: absolute;
+        width: 80vw;
+        height: 30vh;
+        left: 10%;
+        top: 22vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6.2vw;
+        line-height: 7vh;
+        color: #FFFFFF;
+    }
+    .Description {
+        overflow-x: hidden;
+        /* I create thoughtful and usable digital experiences for people. */
+        position: absolute;
+        width: 45.5vw;
+        height: 32.8vh;
+        left: 10%;
+        top: 36vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.75vh;
+        line-height: 4vh;
+        color: #8A8A8A;
+    }
+    .CTA {
+        overflow-x: hidden;
+        /* Show me Case Studies */
+        position: absolute;
+        width: 40vw;
+        height: auto;
+        left: 10%;
+        top: 80vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vh;
+        line-height: 4vh;
+        color: #FFFFFF;
+    }
+    .Arrow-Case-Studies {
+        overflow-x: hidden;
+        display: flex;
+        position: absolute;
+        width: 10vw;
+        height: 4vh;
+        left: 50vw;
+        top: 83vh;
+    }
+    .Resume {
+        overflow-x: hidden;
+        /* Show me Case Studies */
+        position: relative;
+        width: 40vw;
+        height: auto;
+        left: 10%;
+        top: 70vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vh;
+        line-height: 4vh;
+        color: #FFFFFF;
+    }
+    .Arrow-Resume {
+        overflow-x: hidden;
+        display: flex;
+        position: absolute;
+        width: 10vw;
+        height: 4vh;
+        left: 50vw;
+        top: 72.5vh;
+    }
+    .Looking-for-me {
+        overflow-x: hidden;
+        /* Looking for me? */
+        position: relative;
+        width: 50vw;
+        height: 10vh;
+        left: 10%;
+        top: 9vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4.2vh;
+        line-height: 4vh;
+        /* identical to box height */
+        color: #8A8A8A;
+    }
+    .Email {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 10%;
+        top: 28vh;
+    }
+    .github {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 10%;
+        top: 38vh;
+    }
+    .linkedin {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 10%;
+        top: 48vh;
+    }
+    .twitter {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 55%;
+        top: 28vh;
+        display: flex;
+    }
+    .booklist {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 55%;
+        top: 38vh;
+    }
+    .blog {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        left: 55%;
+        top: 48vh;
+    }
+    .Quote {
+        position: absolute;
+        width: 40vw;
+        height: 20vh;
+        left: 10%;
+        top: 65vh;
+        font-family: Cabin;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vh;
+        line-height: 3.5vh;
+        color: #555555;
+        opacity: 0.7;
+    }
+}
 
     @media (max-device-width: 480px) {
         .container {
@@ -825,3 +1061,4 @@
             top: 75vh;
         }
     }
+
