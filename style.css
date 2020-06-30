@@ -825,7 +825,7 @@ and (orientation : landscape) {
             position: fixed;
             width: 0.25vw;
             height: 100vh;
-            left: 10%;
+            left: 11%;
             top: 0px;
             background-color: silver;
             z-index: 1;
@@ -847,7 +847,7 @@ and (orientation : landscape) {
             position: fixed;
             width: 0.25vw;
             height: 100vh;
-            right: 10%;
+            left: 89%;
             top: 0px;
             background-color: silver;
             z-index: 1;
